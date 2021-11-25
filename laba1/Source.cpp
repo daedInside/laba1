@@ -12,7 +12,7 @@ int main()
 
     int* b = new int[N];
 
-    cout << "ÂÂåäèòå " << N << " öèôğ(û):\n";
+    cout << "Ã‚Ã‚Ã¥Ã¤Ã¨Ã²Ã¥ " << N << " Ã¶Ã¨Ã´Ã°(Ã»):\n";
     for (int i = 0; i < N; i++)
         cin >> b[i];
 
@@ -20,7 +20,8 @@ int main()
     for (int i = 1; i < N - 1; i++)
         if ((int)b[i + 1] / b[i] != q) { k++; break; }
 
-    if (k == 0) cout <<"Çíàìåíàòåëü ïğîãğåññèè:" << q << endl;
+    if (k == 0) cout <<"Ã‡Ã­Ã Ã¬Ã¥Ã­Ã Ã²Ã¥Ã«Ã¼ Ã¯Ã°Ã®Ã£Ã°Ã¥Ã±Ã±Ã¨Ã¨:" << q << endl;
     else cout << 0 << endl;
+    delete[]b;
     return 0;
 }
